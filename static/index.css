@@ -1,0 +1,78 @@
+* {
+	outline: none;
+	transition-duration: 1s;
+	font-family: "Roboto", sans-serif;
+}
+body {
+	margin: 0px;
+	background-color: black;
+	overflow: hidden;
+}
+.star {
+	position: absolute;
+	background-image: url("/static/star.png");
+	background-size: 100% 100%;
+	z-index: 0;
+}
+
+#stars {
+	position: absolute;
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+	z-index: 0;
+}
+@keyframes flicker {
+  0% { opacity: 1; }
+  10% { opacity: 0; }
+  20% { opacity: 1; }
+  100% { opacity: 1; }
+}
+#box {
+	border: none;
+	background-color: crimson;
+	color: #121213;
+	padding: 2vmin;
+	width: 84vmin;
+	height: 8vmin;
+	font-size: 6vmin;
+	float: left;
+}
+#send {
+	border: none;
+	background-color: white;
+	color: black;
+	width: 12vmin;
+	height: 12vmin;
+	font-size: 12vmin;
+	line-height: 12vmin;
+	border-radius: 6vmin;
+	float: right;
+}
+#area {
+	background-color: crimson;
+	margin-top: 12vmin;
+	height: 32vmin;
+	font-size: 3vmin;
+	padding: 2vmin;
+	overflow-y: scroll;
+	scrollbar-width: none;
+	display: flex;
+	flex-direction: column-reverse;
+}
+#input {
+	box-shadow: 0px 0px 4vmin 1vmin crimson;
+	background-color: crimson;
+	position: absolute;
+	top: calc(50vh - 6vmin);
+	left: calc(50vw - 50vmin);
+	height: 12vmin;
+	width: 100vmin;
+	overflow: hidden;
+	border-radius: 6vmin;
+}
+#input.big {
+	top: calc(50vh - 24vmin);
+	height: 48vmin;
+}
+
